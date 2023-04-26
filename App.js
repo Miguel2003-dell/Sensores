@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, Text } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+
+import { View } from "react-native";
+import BottomTab from '.src/navigation/bottom';
 
 const App = () => {
   return (
     <View>
-      <Text>
-        App
-      </Text>
+      <NavigationContainer>
+        <BottomTab />
+      </NavigationContainer>
     </View>
 
   )
